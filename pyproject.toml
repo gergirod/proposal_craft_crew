@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "deal_carft"
+version = "0.1.0"
+description = "deal_carft using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.65.2,<1.0.0" }
+
+
+[tool.poetry.scripts]
+deal_carft = "deal_carft.main:run"
+run_crew = "deal_carft.main:run"
+train = "deal_carft.main:train"
+replay = "deal_carft.main:replay"
+test = "deal_carft.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

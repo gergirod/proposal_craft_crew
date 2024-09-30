@@ -1,0 +1,41 @@
+client_industry_research_task:
+  description: >
+    Conduct thorough research using CrewAI's documentation website https://docs.crewai.com/ usign the WebsiteSearchTool. Focus the research on AI architectures, workflows, and best practices that can specifically address the client's needs and align with the proposed solution.
+    Client Needs: {client_needs}
+    Proposed Solution: {solution_details}
+  expected_output: >
+    A report summarizing relevant findings from CrewAI documentation, including details on how AI architecture and tools can be applied to meet the client's requirements.
+
+solution_design_task:
+  description: >
+    Design the technical architecture for the proposed AI solution based on the client’s requirements and your team's solution. Break down the components, tools, and workflow.
+    Client Needs: {client_needs}
+    Proposed Solution: {solution_details}
+  expected_output: >
+    A technical architecture document that details the AI solution, including its components, workflow, and integration plan.
+
+cost_roi_analysis_task:
+  description: >
+    Perform a financial analysis to estimate the total cost of implementing the solution, projected savings, and expected ROI.
+    Client Needs: {client_needs}
+    Proposed Solution: {solution_details}
+  expected_output: >
+    A financial analysis report with implementation costs, projected savings, and ROI over time.
+
+proposal_draft_task:
+  description: >
+    Draft the full proposal, combining research findings, solution architecture, and financial analysis, 
+    highlighting the business and technical benefits. Use the following structure to ensure the proposal is
+    professional and aligned with a classic business proposal template:
+
+    - **Introduction**: Provide an introduction to your company, your expertise, and the client's challenges.
+    - **Client Needs**: Summarize the client’s needs and challenges related to AI solutions.
+    - **Proposed Solution**: Describe the AI solution and how it addresses the client's needs.
+    - **Technical Details**: Provide a technical breakdown of the solution, including architecture and tools.
+    - **Cost and ROI Analysis**: Present a financial analysis, including costs and expected ROI.
+    - **Timeline**: Outline the timeline for implementation and deployment.
+    - **Conclusion**: Conclude by summarizing the value the solution will bring to the client.
+  
+  expected_output: >
+    A complete proposal document that adheres to the template and includes an overview of the AI solution, technical details, 
+    financial projections, and business benefits.
